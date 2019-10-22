@@ -1,0 +1,49 @@
+// all the places where the user's store is displayed!
+
+.store-info {
+  .btn-outline-blue {
+    color: #0068b3;
+    padding: 0;
+  }
+
+  .event-dates {
+    font-size: 14px;
+  }
+}
+
+//Store Selection Modal
+#storeSelectModal {
+  .store {
+    .bg-blue {
+      background-color: #0068b3;
+    }
+  }
+}
+
+.user-store {
+  &__btn {
+    background-color: transparent;
+    border: none;
+    padding: 0 0 0 0;
+    
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__name,
+  &__city {
+    font-size: 13px;
+    font-weight: 600;
+  }
+}
+
+
+@include media-breakpoint-up( lg ) {
+  .user-store {
+    &__name,
+    &__city {
+      font-size: 14px;
+    }
+  }
+}
